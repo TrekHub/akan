@@ -110,6 +110,12 @@ header {
   border-radius: 10px;
   outline: none;
 }
+.banner-btn button:hover {
+    background-color: #1b7a53;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
 
 .right {
   width: 50%;
@@ -121,4 +127,23 @@ header {
     border-top-right-radius: 30px ;
     margin-left: 100px;
 
+}
+
+
+
+/* ABOUT SECTION */
+
+#about {
+    width: 90%;
+    margin: auto;
+    
+
+}
+#about-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-img {
+    
 }
