@@ -139,11 +139,32 @@ header {
     
 
 }
+.section-title h1{
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 800;
+    color: #0a5838;
+}
 #about-section {
     display: flex;
     justify-content: space-between;
 
 }
 .left-img {
+    width: 50%;
+
+}
+.left-img .image img {
+    margin-left: 100px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px ;
+}
+
+.right-info {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
 }
