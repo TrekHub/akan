@@ -10,9 +10,6 @@ main {
 header {
   background-color: rgba(10, 88, 56, 0.16);
   padding-bottom: 20px;
-
-  
-
 }
 
 #nav {
@@ -83,7 +80,6 @@ header {
   width: 90%;
   margin: auto;
   justify-content: space-between !important;
-
 }
 
 .left {
@@ -91,7 +87,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 .left h1 {
   font-size: 42px;
@@ -111,60 +106,105 @@ header {
   outline: none;
 }
 .banner-btn button:hover {
-    background-color: #1b7a53;
-    color: white;
-    font-weight: bold;
-    border: none;
-  }
+  background-color: #1b7a53;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
 
 .right {
   width: 50%;
 }
-.right .image  img{
-    
-
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px ;
-    margin-left: 100px;
-
+.right .image img {
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-left: 100px;
 }
-
-
 
 /* ABOUT SECTION */
 
 #about {
-    width: 90%;
-    margin: auto;
-    
-
+  width: 90%;
+  margin: auto;
 }
-.section-title h1{
-    text-align: center;
-    margin: 30px 0;
-    font-weight: 800;
-    color: #0a5838;
+.section-title h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 800;
+  color: #0a5838;
 }
 #about-section {
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 .left-img {
-    width: 50%;
-
+  width: 50%;
 }
 .left-img .image img {
-    margin-left: 100px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px ;
+  margin-left: 100px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .right-info {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* NAME SECTI?ON */
+
+#name {
+  width: 100%;
+  background-color: rgba(10, 88, 56, 0.16);
+  padding: 30px;
+}
+#name-section {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.name-input,
+.birth-input {
+  display: flex;
+
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.gender-input {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
+    margin: 10px 0;
+    align-items: center;
+}
+.gender-input #gd {
+    margin-right: 20px;
+}
+.gender-input div {
+    margin-right: 20px;
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a5838;
+    margin: 10px 0;
+}
+
+.name-input input , .birth-input input , .year-input input {
+    width: 300px;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid #0a5838;
+    background-color: transparent;
+}
+#name-section  .banner-btn{
+    margin: auto;
+    margin-top: 30px;
+
+
 }
