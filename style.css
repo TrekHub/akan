@@ -6,6 +6,7 @@ main {
   padding: 0;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 header {
   background-color: rgba(10, 88, 56, 0.16);
@@ -207,4 +208,17 @@ label {
     margin-top: 30px;
 
 
+}
+
+
+
+/* FOOTER SECTION */
+
+footer {
+    height: 40px;
+    background-color: #0a5838;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
