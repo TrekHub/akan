@@ -12,10 +12,11 @@ html {
 header {
   background-color: rgba(10, 88, 56, 0.16);
   padding-bottom: 20px;
+  
 }
 
 #nav {
-  width: 90%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -79,7 +80,7 @@ header {
 
 #banner {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
   justify-content: space-between !important;
 }
