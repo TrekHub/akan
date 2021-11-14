@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
 
 body,
-main {
+main,
+html {
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif  !important;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -167,58 +168,22 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
-
-}
-.name-input,
-.birth-input {
-  display: flex;
-
-  margin: 10px 0;
-  justify-content: space-between;
-}
-.gender-input {
-    display: flex;
-    margin: 10px 0;
-    align-items: center;
-}
-.gender-input #gd {
-    margin-right: 20px;
-}
-.gender-input div {
-    margin-right: 20px;
-}
-label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #0a5838;
-    margin: 10px 0;
-}
-
-.name-input input , .birth-input input , .year-input input {
-    width: 300px;
-    margin-top: 10px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 5px 10px;
-    border: 2px solid #0a5838;
-    background-color: transparent;
-}
-#name-section  .banner-btn{
-    margin: auto;
-    margin-top: 30px;
-
-
 }
 
 
+ #form-btn #name-section .banner-btn {
+   width: 40%;
+  margin: auto;
+  margin-top: 30px;
+}
 
 /* FOOTER SECTION */
 
 footer {
-    height: 40px;
-    background-color: #0a5838;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px;
+  height: 40px;
+  background-color: #0a5838;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
 }

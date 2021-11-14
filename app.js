@@ -2,9 +2,13 @@ const btnSubmit = document.getElementById('submit')
 const day = document.getElementById('day')
 const month = document.getElementById('month')
 const year = document.getElementById('year')
+const gender = document.getElementById('gender')
+const akan = document.getElementById('body')
 
 
-btnSubmit.addEventListener('click', () => {
+btnSubmit.addEventListener('click', (e) => {
+
+    e.preventDefault()
 
 
 
@@ -22,11 +26,15 @@ btnSubmit.addEventListener('click', () => {
 
 
 
-    if (male) {
-        console.log(maleArr[weekDay]);
+    if (gender.value == 'male') {
+        akanName = maleArr[weekDay]
     } else {
-        console.log(femaleArr[weekDay]);
+        akanName = femaleArr[weekDay]
     }
+
+    akan.innerHTML = `
+    <p class="fs-4">Your Akan Name is <strong class="text-success">${akanName}</strong></p>
+    `
 
     console.log(`My BirthDay is ${day.value}-${month.value}-${year.value}`);
 

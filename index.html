@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Akhan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -109,58 +111,48 @@
             </div>
 
             <div id="name-section">
-                <div class="name-input">
-                    <div>
-                        <label for="fname">First Name</label> <br>
-                        <input type="text" id="fname">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="fname" class="form-label fw-bold text-success fs-5">First Name</label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lname" class="form-label fw-bold text-success fs-5">Last Name</label>
+                        <input type="text" class="form-control" id="lname">
                     </div>
 
-                    <div>
-                        <label for="fname">First Name</label> <br>
-                        <input type="text" id="fname">
+                    <div class="col-md-8">
+                        <label for="gender" class="form-label fw-bold text-success fs-5">Gender</label>
+                        <select id="gender" class="form-select w-25">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </div>
 
-                </div>
-
-                <div class="gender-input">
-                    <label for="gender" id="gd">Gender</label> <br>
-
-                    <div>
-                        <label for="gender">Male</label>
-                        <input type="radio" name="male" id="male">
+                    <div class="col-md-6">
+                        <label for="day" class="form-label fw-bold text-success fs-5">Day</label>
+                        <input type="text" class="form-control" id="day">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="month" class="form-label fw-bold text-success fs-5">Month</label>
+                        <input type="text" class="form-control" id="month">
                     </div>
 
-                    <div>
-                        <label for="gender">Female</label>
-                        <input type="radio" name="female" id="female">
-                    </div>
-                </div>
-
-                <div class="birth-input">
-                    <div>
-                        <label for="day">Day</label> <br>
-                        <input type="text" id="day">
+                    <div class="col-md-6">
+                        <label for="year" class="form-label fw-bold text-success fs-5">Year</label>
+                        <input type="text" class="form-control" id="year">
                     </div>
 
-                    <div>
-                        <label for="month">Month</label> <br>
-                        <input type="text" id="month">
+
+                    <div id="form-btn" class="col-12">
+                        <div class="banner-btn">
+                            <button id="submit" data-bs-toggle="modal" data-bs-target="#khan">Akhan Name</button>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="year-input">
-                    <div>
-                        <label for="year">Year</label> <br>
-                        <input type="text" id="year">
-                    </div>
-
-                </div>
-
-                <div class="banner-btn">
-                    <button>Akhan Name</button>
-                </div>
+                </form>
             </div>
+
+
 
 
         </div>
@@ -172,13 +164,45 @@
         <footer>
             <p>Made By Teddy</p>
         </footer>
+
+
+
+
+
+
     </div>
 
 
 
 
 
+    <div class="modal" id="khan">
+        <div class="modal-dialog modal-dialog-centered">
 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Akan Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="body" class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <div class="banner-btn">
+                        <button data-bs-dismiss="modal" >Close</button>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 
     <script src="app.js"></script>
 </body>
