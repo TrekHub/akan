@@ -118,7 +118,7 @@ header {
 /* .right {
   width: 50%;
 } */
-.right .image img {
+ .image img {
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   /* margin-left: 100px; */
