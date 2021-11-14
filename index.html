@@ -128,7 +128,7 @@
 
                     <div class="col-md-8">
                         <label for="gender" class="form-label fw-bold text-success fs-5">Gender</label>
-                        <select id="gender" class="form-select w-50">
+                        <select id="gender" class="form-select w-50" required>
                             <option value="male" selected>Male</option>
                             <option value="female">Female</option>
                         </select>
@@ -136,22 +136,24 @@
 
                     <div class="col-md-6">
                         <label for="day" class="form-label fw-bold text-success fs-5">Day</label>
-                        <input type="text" class="form-control" id="day">
+                        <input type="number" class="form-control" id="day" max="31" >
+                     
+                     
                     </div>
                     <div class="col-md-6">
                         <label for="month" class="form-label fw-bold text-success fs-5">Month</label>
-                        <input type="text" class="form-control" id="month">
+                        <input type="number" class="form-control" id="month" max="12">
                     </div>
 
                     <div class="col-md-6">
                         <label for="year" class="form-label fw-bold text-success fs-5">Year</label>
-                        <input type="text" class="form-control" id="year">
+                        <input type="text" class="form-control" id="year" required>
                     </div>
 
 
                     <div id="form-btn" class="col-12">
                         <div class="banner-btn">
-                            <button id="submit" data-bs-toggle="modal" data-bs-target="#khan">Akhan Name</button>
+                            <button type="submit" id="submit" data-bs-toggle="modal" data-bs-target="#khan">Akhan Name</button>
                         </div>
                     </div>
                 </form>

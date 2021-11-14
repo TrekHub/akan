@@ -188,3 +188,8 @@ footer {
   text-align: center;
   padding: 5px;
 }
+
+#day:invalid , #month:invalid {
+  border: 3px solid red !important;
+  
+}

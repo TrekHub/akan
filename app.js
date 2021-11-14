@@ -13,13 +13,6 @@ const lname = document.getElementById('lname')
 
 
 
-
-
-
-
-
-
-
 btnSubmit.addEventListener('click', (e) => {
 
     e.preventDefault()
@@ -31,10 +24,22 @@ btnSubmit.addEventListener('click', (e) => {
     yearArr = fullYear.match(/.{1,2}/g);
     century = parseInt(yearArr[0]);
     actualYear = parseInt(yearArr[1]);
+
+    
+
+    generateName()
+      
+
+})
+
+
+
+
+
+function generateName() {
     const birthDate = `${month.value}-${day.value}-${year.value}`
     const weekDay = new Date(birthDate).getDay()
     
-
 
     if (gender.value == 'male') {
         akanName = maleArr[weekDay]
@@ -45,6 +50,4 @@ btnSubmit.addEventListener('click', (e) => {
     modalHeader.innerHTML = `<h5 class="modal-title">${fname.value}  ${lname.value}</h5> `
     akan.innerHTML = `<p class="fs-4">Your Akan Name is <strong class="text-success">${akanName}</strong></p>`
 
-   
-
-})
+}
