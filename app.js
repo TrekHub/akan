@@ -13,8 +13,8 @@ btnSubmit.addEventListener('click', (e) => {
 
 
 
-    maleArr = [' ', 'Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
-    femaleArr = [' ', 'Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
+    maleArr = [ ' ','Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    femaleArr = [ 'Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']
     actualDay = parseInt(day.value)
     actualMonth = parseInt(month.value)
     fullYear = year.value
@@ -22,9 +22,10 @@ btnSubmit.addEventListener('click', (e) => {
     century = parseInt(yearArr[0]);
     actualYear = parseInt(yearArr[1]);
     const male = true;
-    weekDay = parseInt((((century / 4) - 2 * century - 1) + ((5 * actualYear / 4)) + ((26 * (actualMonth + 1) / 10)) + actualDay) % 7)
+    weekDay = Math.round((((century / 4) - 2 * century - 1) + ((5 * actualYear / 4)) + ((26 * (actualMonth + 1) / 10)) + actualDay) % 7)
 
-
+// const weekDay =( ( actualDay + ((13*actualMonth-1)/5 + actualYear + (actualYear/4) + (century/4)-2*century)) / 7) % 7
+console.log(weekDay);
 
     if (gender.value == 'male') {
         akanName = maleArr[weekDay]
